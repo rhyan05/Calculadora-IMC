@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+:root {
+    --primary-color: #dec3c3;
+    --primary-color-dark: #dec7c3b0;
+    --secundary-color: #1404379b;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 20px auto;
+    background: #fff7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tables-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espaço entre tabelas e o formulário */
+}
+
+.imc-table, .resultado-table {
+    width: 48%; /* Ajuste a largura conforme necessário */
+    background: var(--primary-color-dark);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h1,h2 {
+    margin-top: 0;
+}
+
+.btn-enviar, form label, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--secundary-color);
+}
+
+form button {
+    border: none;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background: var(--primary-color-dark);
+}
+
+form button:active {
+    background: rgb(254, 73, 73);
+}
+
+.paragrafo {
+    margin-bottom: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &.correto {
+        background: #20de0edd;
+    }
+    
+    &.errado {
+        background: #de490edd;
+    }
+}
+
+/* 
+caso prefira não utilizar o scss, segue abaixo o jeito padrão:
+
+.paragrafo {
+    padding: 10px 20px;
+}
+
+.paragrafo.correto {
+    background: #20de0edd;
+}
+
+.paragrafo.errado {
+    background: #de490edd;
+} 
+    */
