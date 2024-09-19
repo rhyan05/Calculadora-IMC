@@ -30,11 +30,11 @@ body {
 .tables-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* Espaço entre tabelas e o formulário */
+    margin-bottom: 20px;
 }
 
 .imc-table, .resultado-table {
-    width: 48%; /* Ajuste a largura conforme necessário */
+    width: 48%;
     background: var(--primary-color-dark);
     padding: 15px;
     border-radius: 5px;
